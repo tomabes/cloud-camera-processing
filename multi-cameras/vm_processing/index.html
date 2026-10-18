@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VM Multi-camera Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <p class="label">Azure VM + YOLOv8</p>
+        <h1>Multi-camera Dashboard</h1>
+        <div class="run-line">
+          <label>Run
+            <select id="runSelect"><option value="">Waiting for results</option></select>
+          </label>
+          <span>Status: <strong id="runStatus">-</strong></span>
+          <label>Camera
+            <select id="cameraSelect"><option value="all">All cameras</option></select>
+          </label>
+        </div>
+      </header>
+
+      <section class="metrics" aria-label="VM experiment summary">
+        <article><span>Cameras</span><strong id="cameraMode">-</strong></article>
+        <article><span>Average response</span><strong id="averageResponse">-</strong></article>
+        <article><span>CPU avg / max</span><strong id="cpuUsage">-</strong></article>
+        <article><span>Memory avg / max</span><strong id="memoryUsage">-</strong></article>
+        <article><span>Network traffic, run total</span><strong id="networkTraffic">-</strong></article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>People by Camera</h2>
+          <span>detections per processed frame</span>
+        </div>
+        <svg id="peopleChart" viewBox="0 0 960 300" role="img" aria-label="People detected by camera"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Vehicles by Camera</h2>
+          <span>detections per processed frame</span>
+        </div>
+        <svg id="vehicleChart" viewBox="0 0 960 300" role="img" aria-label="Vehicles detected by camera"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Response Time</h2>
+          <span id="resultCount">waiting for results</span>
+        </div>
+        <svg id="latencyChart" viewBox="0 0 960 340" role="img" aria-label="Latency metrics chart"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>VM CPU and Memory</h2>
+          <span>sampled every second</span>
+        </div>
+        <svg id="resourceChart" viewBox="0 0 960 300" role="img" aria-label="VM CPU and memory chart"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Latest Processed Frames</h2>
+          <span>one image per camera</span>
+        </div>
+        <div id="cameraFrames" class="camera-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Requests</h2>
+          <span>database.csv</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th><th>Camera</th><th>Frame</th><th>People</th>
+                <th>Vehicles</th><th>Response</th><th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="resultsTable">
+              <tr><td colspan="7">Waiting for the first request...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

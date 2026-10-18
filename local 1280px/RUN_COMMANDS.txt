@@ -1,0 +1,6 @@
+Part 1: local processing
+========================
+
+cd "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/local 1280px"
+/Users/toma/.local/share/mamba/envs/jlab/bin/python -m pip install -r requirements.txt
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py

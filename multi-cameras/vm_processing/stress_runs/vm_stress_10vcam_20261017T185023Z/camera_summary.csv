@@ -1,0 +1,11 @@
+run_id,virtual_camera_count,virtual_camera_id,source_image,expected_requests,attempted_requests,successful_requests,failed_requests,missed_requests,late_requests,average_person_count,average_vehicle_count,average_vm_inference_ms,max_vm_inference_ms,average_vm_queue_ms,max_vm_queue_ms,average_vm_roundtrip_ms,max_vm_roundtrip_ms
+vm_stress_10vcam_20261017T185023Z,10,virtual_001,abbey_road.jpg,3,3,3,0,0,0,16.0,1.0,75.0,103.0,101.33,304.0,985.0,1448.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_002,liberty_bell.jpg,3,3,3,0,0,0,13.0,0.0,58.33,59.0,140.67,251.0,765.33,939.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_003,times_square.jpg,3,3,3,0,0,0,13.0,0.0,57.33,59.0,136.67,191.0,1276.67,1567.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_004,abbey_road.jpg,3,3,3,0,0,0,16.0,1.0,58.67,60.0,170.67,304.0,766.33,910.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_005,liberty_bell.jpg,3,3,3,0,0,0,13.0,0.0,59.0,61.0,139.33,144.0,744.0,830.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_006,times_square.jpg,3,3,3,0,0,0,13.0,0.0,58.33,59.0,290.67,363.0,902.33,1075.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_007,abbey_road.jpg,3,3,3,0,0,0,16.0,1.0,71.33,80.0,158.0,474.0,746.0,1189.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_008,liberty_bell.jpg,3,3,3,0,0,0,13.0,0.0,58.67,60.0,223.33,420.0,1071.67,1332.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_009,times_square.jpg,3,3,3,0,0,0,13.0,0.0,56.33,58.0,188.0,307.0,1079.67,1503.0
+vm_stress_10vcam_20261017T185023Z,10,virtual_010,abbey_road.jpg,3,3,3,0,0,0,16.0,1.0,61.33,64.0,50.0,86.0,869.0,1311.0

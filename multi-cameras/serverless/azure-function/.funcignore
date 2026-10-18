@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*/__pycache__/
+.python_packages/
+backups/
+function_app.py
+local.settings.json
+local.settings.json.example

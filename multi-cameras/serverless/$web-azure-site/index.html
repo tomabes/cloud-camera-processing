@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azure Serverless Multi-camera Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <p class="label">Azure Serverless + Azure AI Vision</p>
+        <h1>Multi-camera Dashboard</h1>
+        <div class="run-line">
+          <label>Run
+            <select id="runSelect"><option value="">Waiting for results</option></select>
+          </label>
+          <span>Status: <strong id="runStatus">-</strong></span>
+          <label>Camera
+            <select id="cameraSelect"><option value="all">All cameras</option></select>
+          </label>
+        </div>
+      </header>
+
+      <section class="metrics" aria-label="Serverless experiment summary">
+        <article><span>Cameras</span><strong id="cameraMode">-</strong></article>
+        <article><span>Average response</span><strong id="averageResponse">-</strong></article>
+        <article><span>Processed / expected</span><strong id="processedCount">-</strong></article>
+        <article><span>Failed</span><strong id="failedCount">-</strong></article>
+        <article><span>Missing</span><strong id="missingCount">-</strong></article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>People by Camera</h2>
+          <span>detections per processed frame</span>
+        </div>
+        <svg id="peopleChart" viewBox="0 0 960 300" role="img" aria-label="People detected by camera"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Vehicles by Camera</h2>
+          <span>detections per processed frame</span>
+        </div>
+        <svg id="vehicleChart" viewBox="0 0 960 300" role="img" aria-label="Vehicles detected by camera"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Response Time</h2>
+          <span id="resultCount">waiting for results</span>
+        </div>
+        <svg id="latencyChart" viewBox="0 0 960 340" role="img" aria-label="Serverless latency chart"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Latest Processed Frames</h2>
+          <span>one image per camera</span>
+        </div>
+        <div id="cameraFrames" class="camera-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Requests</h2>
+          <span>runs/results.csv</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th><th>Camera</th><th>Frame</th><th>People</th><th>Vehicles</th>
+                <th>Response</th><th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="resultsTable">
+              <tr><td colspan="7">Waiting for the first processed frame...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

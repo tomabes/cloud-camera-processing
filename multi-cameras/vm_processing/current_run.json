@@ -1,0 +1,17 @@
+{
+  "architecture": "vm_processing",
+  "run_id": "vm_3cam_synchronized_20261017T170652Z",
+  "camera_count": 3,
+  "schedule_mode": "synchronized",
+  "started_at_utc": "2026-10-17T17:06:52.974482+00:00",
+  "finished_at_utc": "2026-10-17T17:08:54.109019+00:00",
+  "status": "finished",
+  "results_csv": "runs/vm_3cam_synchronized_20261017T170652Z/database.csv",
+  "system_metrics_csv": "runs/vm_3cam_synchronized_20261017T170652Z/vm_system_metrics.csv",
+  "summary_json": "runs/vm_3cam_synchronized_20261017T170652Z/run_summary.json",
+  "latest_images": {
+    "times_square": "runs/vm_3cam_synchronized_20261017T170652Z/latest/times_square.jpg",
+    "abbey_road": "runs/vm_3cam_synchronized_20261017T170652Z/latest/abbey_road.jpg",
+    "liberty_bell": "runs/vm_3cam_synchronized_20261017T170652Z/latest/liberty_bell.jpg"
+  }
+}

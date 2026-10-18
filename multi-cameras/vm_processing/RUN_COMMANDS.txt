@@ -1,0 +1,41 @@
+VM processing: deployment and experiments
+=========================================
+
+KEY="/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/toma-VM_key.pem"
+VM_IP="70.156.207.242"
+
+az vm start --resource-group TOMA-GROUP-ARC --name toma-VM
+
+cd "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing"
+scp -i "$KEY" detector_server.py yolov8n.pt requirements.txt azureuser@$VM_IP:/home/azureuser/vm_processing/
+
+ssh -i "$KEY" -L 8000:127.0.0.1:8000 azureuser@$VM_IP
+
+On the VM:
+
+cd /home/azureuser/vm_processing
+source .venv/bin/activate
+pip install -r requirements.txt --no-cache-dir
+export YOLO_CONFIG_DIR=/home/azureuser/vm_processing/.cache
+python detector_server.py --host 127.0.0.1 --port 8000
+
+Dashboard, in a second terminal:
+
+cd "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing"
+/Users/toma/.local/share/mamba/envs/jlab/bin/python -m http.server 8080
+
+http://127.0.0.1:8080/
+
+Real-camera experiments, in a third terminal:
+
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 1 --schedule-mode synchronized --imgsz 640
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 2 --schedule-mode synchronized --imgsz 640
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 3 --schedule-mode synchronized --imgsz 640
+
+Virtual-camera stress tests:
+
+/Users/toma/.local/share/mamba/envs/jlab/bin/python vm_stress_test.py --virtual-camera-count 5 --duration-seconds 15 --interval-seconds 5 --imgsz 640
+/Users/toma/.local/share/mamba/envs/jlab/bin/python vm_stress_test.py --virtual-camera-count 10 --duration-seconds 15 --interval-seconds 5 --imgsz 640
+/Users/toma/.local/share/mamba/envs/jlab/bin/python vm_stress_test.py --virtual-camera-count 15 --duration-seconds 15 --interval-seconds 5 --imgsz 640
+
+az vm deallocate --resource-group TOMA-GROUP-ARC --name toma-VM

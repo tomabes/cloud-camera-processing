@@ -1,0 +1,35 @@
+{
+  "assignment_part": "Part 1 - Local Work",
+  "camera_id": "times_square",
+  "camera_page_url": "https://www.earthcam.com/usa/newyork/timessquare/?cam=tsstreet",
+  "earthcam_camera_key": "tsstreet",
+  "capture_method": "EarthCam HLS stream captured with ffmpeg",
+  "architecture": "local",
+  "model": "yolov8n.pt",
+  "detected_classes": {
+    "people": [
+      "person"
+    ],
+    "vehicles": [
+      "bicycle",
+      "car",
+      "motorcycle",
+      "bus",
+      "truck"
+    ]
+  },
+  "confidence_threshold": 0.3,
+  "inference_image_size": 1280,
+  "interval_seconds": 5,
+  "duration_seconds": 300,
+  "total_frames_requested": 60,
+  "save_every_n_frames": 5,
+  "csv_file": "database.csv",
+  "latest_raw_frame": "raw_frame.jpg",
+  "latest_processed_frame": "processed_frame.jpg",
+  "plot_file": "people_count_plot.png",
+  "started_at": "2026-09-28 18:36:49",
+  "finished_at": "2026-09-28 18:41:48",
+  "successful_frames": 60,
+  "failed_frames": 0
+}

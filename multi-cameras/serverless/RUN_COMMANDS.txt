@@ -1,0 +1,16 @@
+Serverless processing: deployment and experiments
+=================================================
+
+cd "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/serverless/azure-function"
+func azure functionapp publish "toma-app2026" --python --build remote
+
+cd "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/serverless"
+az storage blob upload-batch --account-name tomastorage --destination '$web' --source '$web-azure-site' --overwrite --auth-mode login
+
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 1 --schedule-mode synchronized
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 2 --schedule-mode synchronized
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 3 --schedule-mode synchronized
+
+/Users/toma/.local/share/mamba/envs/jlab/bin/python grabber.py --duration-seconds 120 --interval-seconds 5 --camera-count 3 --schedule-mode staggered
+
+https://tomastorage.z43.web.core.windows.net/?v=serverless

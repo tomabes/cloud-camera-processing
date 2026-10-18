@@ -1,0 +1,191 @@
+{
+  "runs": [
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_3cam_synchronized_20261017T170652Z",
+      "camera_count": 3,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T17:06:52.974482+00:00",
+      "finished_at_utc": "2026-10-17T17:08:54.109019+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_3cam_synchronized_20261017T170652Z/database.csv",
+      "system_metrics_csv": "runs/vm_3cam_synchronized_20261017T170652Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_3cam_synchronized_20261017T170652Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_3cam_synchronized_20261017T170652Z/latest/times_square.jpg",
+        "abbey_road": "runs/vm_3cam_synchronized_20261017T170652Z/latest/abbey_road.jpg",
+        "liberty_bell": "runs/vm_3cam_synchronized_20261017T170652Z/latest/liberty_bell.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_2cam_synchronized_20261017T170228Z",
+      "camera_count": 2,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T17:02:28.495445+00:00",
+      "finished_at_utc": "2026-10-17T17:04:28.876505+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_2cam_synchronized_20261017T170228Z/database.csv",
+      "system_metrics_csv": "runs/vm_2cam_synchronized_20261017T170228Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_2cam_synchronized_20261017T170228Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_2cam_synchronized_20261017T170228Z/latest/times_square.jpg",
+        "abbey_road": "runs/vm_2cam_synchronized_20261017T170228Z/latest/abbey_road.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T165249Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T16:52:49.604123+00:00",
+      "finished_at_utc": "2026-10-17T16:54:49.824049+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T165249Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T165249Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T165249Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T165249Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T164702Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T16:47:02.890798+00:00",
+      "finished_at_utc": "2026-10-17T16:49:02.767327+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T164702Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T164702Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T164702Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T164702Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T162954Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T16:29:54.561508+00:00",
+      "finished_at_utc": "2026-10-17T16:31:58.773662+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T162954Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T162954Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T162954Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T162954Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_2cam_synchronized_20261017T162531Z",
+      "camera_count": 2,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T16:25:31.194900+00:00",
+      "finished_at_utc": "2026-10-17T16:27:36.447360+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_2cam_synchronized_20261017T162531Z/database.csv",
+      "system_metrics_csv": "runs/vm_2cam_synchronized_20261017T162531Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_2cam_synchronized_20261017T162531Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_2cam_synchronized_20261017T162531Z/latest/times_square.jpg",
+        "abbey_road": "runs/vm_2cam_synchronized_20261017T162531Z/latest/abbey_road.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T161721Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T16:17:21.558637+00:00",
+      "finished_at_utc": "2026-10-17T16:19:29.510062+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T161721Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T161721Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T161721Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T161721Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T151255Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T15:12:55.245989+00:00",
+      "finished_at_utc": "2026-10-17T15:15:05.088069+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T151255Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T151255Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T151255Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T151255Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T150929Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T15:09:29.290711+00:00",
+      "finished_at_utc": "2026-10-17T15:11:29.187112+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T150929Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T150929Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T150929Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T150929Z/latest/times_square.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_3cam_synchronized_20261017T144818Z",
+      "camera_count": 3,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T14:48:18.685788+00:00",
+      "finished_at_utc": "2026-10-17T14:50:19.568772+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_3cam_synchronized_20261017T144818Z/database.csv",
+      "system_metrics_csv": "runs/vm_3cam_synchronized_20261017T144818Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_3cam_synchronized_20261017T144818Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_3cam_synchronized_20261017T144818Z/latest/times_square.jpg",
+        "abbey_road": "runs/vm_3cam_synchronized_20261017T144818Z/latest/abbey_road.jpg",
+        "liberty_bell": "runs/vm_3cam_synchronized_20261017T144818Z/latest/liberty_bell.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_2cam_synchronized_20261017T143532Z",
+      "camera_count": 2,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T14:35:32.887080+00:00",
+      "finished_at_utc": "2026-10-17T14:37:33.623551+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_2cam_synchronized_20261017T143532Z/database.csv",
+      "system_metrics_csv": "runs/vm_2cam_synchronized_20261017T143532Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_2cam_synchronized_20261017T143532Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_2cam_synchronized_20261017T143532Z/latest/times_square.jpg",
+        "abbey_road": "runs/vm_2cam_synchronized_20261017T143532Z/latest/abbey_road.jpg"
+      }
+    },
+    {
+      "architecture": "vm_processing",
+      "run_id": "vm_1cam_synchronized_20261017T141633Z",
+      "camera_count": 1,
+      "schedule_mode": "synchronized",
+      "started_at_utc": "2026-10-17T14:16:33.650088+00:00",
+      "finished_at_utc": "2026-10-17T14:18:33.280882+00:00",
+      "status": "finished",
+      "results_csv": "runs/vm_1cam_synchronized_20261017T141633Z/database.csv",
+      "system_metrics_csv": "runs/vm_1cam_synchronized_20261017T141633Z/vm_system_metrics.csv",
+      "summary_json": "runs/vm_1cam_synchronized_20261017T141633Z/run_summary.json",
+      "latest_images": {
+        "times_square": "runs/vm_1cam_synchronized_20261017T141633Z/latest/times_square.jpg"
+      }
+    }
+  ]
+}

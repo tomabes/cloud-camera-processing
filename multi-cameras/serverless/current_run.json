@@ -1,0 +1,8 @@
+{
+  "architecture": "serverless",
+  "run_id": "serverless_3cam_synchronized_20261018T123144Z",
+  "status": "finished",
+  "upload_log_csv": "runs/serverless_3cam_synchronized_20261018T123144Z/upload_log.csv",
+  "summary_json": "runs/serverless_3cam_synchronized_20261018T123144Z/run_summary.json",
+  "function_results_csv": "runs/serverless_3cam_synchronized_20261018T123144Z/function_results.csv"
+}

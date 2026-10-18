@@ -1,0 +1,79 @@
+{
+  "experiment": "VM synthetic multi-camera stress test",
+  "run_id": "vm_stress_15vcam_20261017T185135Z",
+  "virtual_camera_count": 15,
+  "virtual_cameras": [
+    {
+      "virtual_camera_id": "virtual_001",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/abbey_road.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_002",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/liberty_bell.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_003",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/times_square.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_004",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/abbey_road.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_005",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/liberty_bell.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_006",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/times_square.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_007",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/abbey_road.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_008",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/liberty_bell.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_009",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/times_square.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_010",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/abbey_road.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_011",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/liberty_bell.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_012",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/times_square.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_013",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/abbey_road.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_014",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/liberty_bell.jpg"
+    },
+    {
+      "virtual_camera_id": "virtual_015",
+      "source_image": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work/times_square.jpg"
+    }
+  ],
+  "source_image_count": 3,
+  "source_directory": "/Users/toma/Downloads/STUDY & MASTERS/+UJM/M2 2026:27/M2 1st semester/AI Infrastructure/Assignment 1/contador_personas/multi-cameras/vm_processing/runs/vm_3cam_synchronized_20261017T170652Z/work",
+  "vm_url": "http://127.0.0.1:8000/detect",
+  "confidence": 0.3,
+  "imgsz": 640,
+  "duration_seconds": 15.0,
+  "interval_seconds": 5.0,
+  "expected_frames_per_camera": 3,
+  "expected_total_requests": 45,
+  "warmup_requests_before_measurement": 1,
+  "started_at_utc": "2026-10-17T18:51:35.870401+00:00",
+  "finished_at_utc": "2026-10-17T18:52:17.213513+00:00"
+}

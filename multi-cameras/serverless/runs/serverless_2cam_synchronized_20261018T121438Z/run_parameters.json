@@ -1,0 +1,32 @@
+{
+  "experiment": "Multi-camera Serverless Processing",
+  "run_id": "serverless_2cam_synchronized_20261018T121438Z",
+  "camera_count": 2,
+  "cameras": [
+    {
+      "camera_id": "times_square",
+      "page_url": "https://www.earthcam.com/usa/newyork/timessquare/?cam=tsstreet",
+      "earthcam_camera_key": "tsstreet"
+    },
+    {
+      "camera_id": "abbey_road",
+      "page_url": "https://www.earthcam.com/world/england/london/abbeyroad/?cam=abbeyroad_uk",
+      "earthcam_camera_key": "abbeyroad_uk"
+    }
+  ],
+  "schedule_mode": "synchronized",
+  "capture_method": "Independent EarthCam HLS workers using ffmpeg",
+  "processing_method": "Azure Blob trigger Function + Azure AI Vision",
+  "architecture": "serverless",
+  "raw_container": "raw-images",
+  "interval_seconds_per_camera": 5.0,
+  "scheduling_window_seconds": 120.0,
+  "expected_frames_per_camera": 24,
+  "expected_total_uploads": 48,
+  "started_at_utc": "2026-10-18T12:14:38.080914+00:00",
+  "finished_at_utc": "2026-10-18T12:16:41.016856+00:00",
+  "successful_uploads": 48,
+  "failed_uploads": 0,
+  "results_url": "https://tomastorage.z43.web.core.windows.net/runs/results.csv",
+  "measurement_started_at_utc": "2026-10-18T12:14:39.996346+00:00"
+}

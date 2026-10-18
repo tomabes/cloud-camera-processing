@@ -1,0 +1,43 @@
+{
+  "assignment_part": "Part 2 - VM Processing",
+  "camera_count": 1,
+  "cameras": [
+    {
+      "camera_id": "times_square",
+      "page_url": "https://www.earthcam.com/usa/newyork/timessquare/?cam=tsstreet",
+      "earthcam_camera_key": "tsstreet"
+    }
+  ],
+  "capture_method": "EarthCam HLS stream captured locally with ffmpeg",
+  "processing_method": "YOLOv8 inference served by VM over HTTP POST /detect",
+  "architecture": "vm_processing",
+  "vm_url": "http://127.0.0.1:8000/detect",
+  "detected_classes": {
+    "people": [
+      "person"
+    ],
+    "vehicles": [
+      "bicycle",
+      "car",
+      "motorcycle",
+      "bus",
+      "truck"
+    ]
+  },
+  "confidence_threshold": 0.3,
+  "inference_image_size": 640,
+  "interval_seconds": 5,
+  "duration_seconds": 300,
+  "frames_per_camera_requested": 1,
+  "total_frame_requests": 1,
+  "save_every_n_frames": 5,
+  "csv_file": "database.csv",
+  "latest_raw_frame": "raw_frame.jpg",
+  "latest_processed_frame": "processed_frame.jpg",
+  "plot_file": "vm_metrics_plot.png",
+  "started_at": "2026-10-17 14:10:45",
+  "finished_at": "2026-10-17 14:11:03",
+  "successful_frames": 0,
+  "failed_frames": 0,
+  "successful_frame_requests": 1
+}
