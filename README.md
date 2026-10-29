@@ -1,14 +1,50 @@
-# Cloud Camera Processing
+# Cloud Camera Processing on Azure
 
-The project implements a Smart Lighting System in which public webcams act as presence sensors. Frames are periodically captured from fixed cameras and analysed to identify people and vehicles.
+Cloud and edge computer-vision system in which public webcams act as presence sensors for a smart-lighting scenario. The project compares local YOLOv8 inference with two Azure architectures and extends them from one camera to multi-camera workloads.
 
-The workflow includes:
+![Three-camera VM dashboard](report_assets/vm_3cam_dashboard_people.png)
 
-1. local capture and local YOLOv8 inference;
-2. frame capture on the local computer and inference on an Azure virtual machine;
-3. serverless processing in Azure;
-4. extension of both cloud architectures to multiple cameras.
+## Architectures compared
 
-The repository contains the local single-camera implementation, the multi-camera VM and serverless implementations, the experiments for one, two, and three cameras, and the VM stress tests for 5, 10, and 15 virtual cameras. Saved `.webarchive` files provide visual examples of the dashboards without running the application.
+1. **Local processing:** frame capture and YOLOv8 inference on the same computer.
+2. **Azure VM processing:** local capture with remote inference on an Azure virtual machine.
+3. **Serverless processing:** frame upload to Azure Blob Storage, event-driven Azure Function processing and Azure AI Vision inference.
 
-Run commands are provided in each implementation directory. The complete description and results are available in [Cloud_Report.pdf](https://github.com/tomabes/cloud-camera-processing/blob/main/Tamara_Besedina_Cloud_Report.pdf).
+Each implementation records detections and timing data and exposes a small monitoring dashboard. The experiments cover one, two and three live cameras plus VM stress tests with 5, 10 and 15 simulated cameras.
+
+## Main findings
+
+- local processing provided the simplest low-latency baseline;
+- the VM architecture remained stable with 5 and 10 simulated cameras, while the 15-camera workload overloaded the selected VM configuration;
+- the serverless design scaled the application components independently, but the Azure AI Vision F0 transaction limit caused HTTP 429 errors in the three-camera experiment;
+- the project includes a cost comparison and identifies the service tier, capture interval and compute size as practical scaling constraints.
+
+![Azure cost analysis](report_assets/azure_cost_analysis.png)
+
+## Repository structure
+
+```text
+local 1280px/                    # local YOLOv8 baseline
+multi-cameras/vm_processing/     # multi-camera Azure VM pipeline
+multi-cameras/serverless/        # Blob Storage + Function + Vision pipeline
+report_assets/                   # figures used in the project report
+Tamara_Besedina_Cloud_Report.pdf # full methods, experiments and discussion
+```
+
+Saved `.webarchive` dashboards provide a view of the running interfaces without requiring the Azure resources.
+
+## Run the project
+
+Setup and execution commands are documented next to each implementation:
+
+- [`local 1280px/RUN_COMMANDS.txt`](local%201280px/RUN_COMMANDS.txt)
+- [`multi-cameras/vm_processing/RUN_COMMANDS.txt`](multi-cameras/vm_processing/RUN_COMMANDS.txt)
+- [`multi-cameras/serverless/RUN_COMMANDS.txt`](multi-cameras/serverless/RUN_COMMANDS.txt)
+
+Azure credentials and connection strings must be supplied through environment variables or Azure Function App Settings; they are not stored in the repository.
+
+For the complete methodology and measurements, see the [project report](Tamara_Besedina_Cloud_Report.pdf).
+
+## Tools
+
+Python, YOLOv8, OpenCV, Azure Virtual Machines, Azure Functions, Azure Blob Storage, Azure AI Vision, JavaScript and HTML/CSS.
